@@ -1,28 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark navStyle">
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333333; font-size: 1.5rem; font-weight: bold">
+    <a class="navbar-brand" routerLink="/home">
         <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+    <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">PROYECTOS</a>
+          <a class="nav-link" routerLink="/projects">PROYECTOS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">ACERCA DE MÍ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">HABILIDADES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CURRICULUM</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTÁCTAME</a>
-          </li>
+          <a class="nav-link" routerLink="/about">ACERCA DE MÍ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/skills">HABILIDADES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/curriculum">CURRICULUM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">CONTÁCTAME</a>
+        </li>
       </ul>
     </div>
   </nav>
