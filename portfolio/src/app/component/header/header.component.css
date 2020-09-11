@@ -1,0 +1,16 @@
+.navStyle {
+    background-color: #333333;
+    height: 5.9375rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+/*     text-decoration-color: #E5E5E5; */
+}
+
+.navbar, .navbar-nav, .nav, li, a {
+    color: #E5E5E5 !important;
+} 
+
+.homeBtn {
+    height: 3.75rem;
+    width: 3.75rem
+}
