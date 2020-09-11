@@ -1,9 +1,8 @@
 .navStyle {
-    background-color: #333333;
     height: 5.9375rem;
     font-weight: bold;
     font-size: 1.5rem;
-/*     text-decoration-color: #E5E5E5; */
+    background-color: #333333 !important;
 }
 
 .navbar, .navbar-nav, .nav, li, a {
