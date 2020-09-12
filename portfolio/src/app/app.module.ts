@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer'; 
 
+import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
@@ -30,7 +31,8 @@ import { ContactMeComponent } from './component/contact-me/contact-me.component'
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
