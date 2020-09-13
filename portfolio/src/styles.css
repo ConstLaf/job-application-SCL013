@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 *{
     font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*Global style of background image, with these properties, responsiveq*/
@@ -10,4 +12,6 @@ body {
     background-size: cover;
     position: relative;
     background-attachment: fixed;
+    height: 100vh;
+    /* margin-bottom: 3.125rem; */
 }
