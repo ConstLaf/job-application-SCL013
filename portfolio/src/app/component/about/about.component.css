@@ -1,0 +1,27 @@
+.aboutStyle {
+    background-color: #333333b2;
+    height: 85%;
+    width: 80%;
+}
+
+.aboutText {
+    color: #E5E5E5;
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: 2.625rem;
+}
+
+.aboutImgStyle {
+    background-color: #C4C4C4;
+    width: 50%;
+    height: 50%;
+}
+
+img {
+    height: 50vh;
+}
+
+.aboutTextContainer {
+    width: 50%;
+    height: 50%;
+}
