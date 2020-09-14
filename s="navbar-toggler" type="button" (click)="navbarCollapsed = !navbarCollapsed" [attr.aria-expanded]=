@@ -1,0 +1,295 @@
+[33mcommit 9011a0fb69970f32ea0cf252c158ee6855552e0b[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/fix_style[m[33m, [m[1;31mgitlab/feature/fix_style[m[33m)[m
+Author: JP <jp@JPs-Mac-mini.local>
+Date:   Sun Sep 13 21:45:35 2020 -0300
+
+    fix styles
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mindex d0478b8..f0b8f4a 100644[m
+[1m--- a/portfolio/src/app/component/header/header.component.html[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -1,3 +1,4 @@[m
+[32m+[m[32m<!--[m
+ <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #333333; font-size: 1.5rem; font-weight: bold">[m
+     <a class="navbar-brand" routerLink="/home">[m
+         <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">[m
+[36m@@ -26,3 +27,36 @@[m
+       </ul>[m
+     </div>[m
+   </nav>[m
+[32m+[m[32m-->[m
+[32m+[m
+[32m+[m[32m<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">[m
+[32m+[m[32m  <div class="container">[m
+[32m+[m[32m    <a class="nav-link" routerLink="/home">[m
+[32m+[m[32m      <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">[m
+[32m+[m[32m    </a>[m
+[32m+[m
+[32m+[m[32m    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">[m
+[32m+[m[32m      <span class="navbar-toggler-icon"></span>[m
+[32m+[m[32m    </button>[m
+[32m+[m[41m        [m
+[32m+[m[32m    <div class="collapse navbar-collapse" id="navbar">[m
+[32m+[m[32m      <ul class="nav navbar-nav ml-auto">[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/projects">PROYECTOS</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/about">ACERCA DE MÍ</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/skills">HABILIDADES</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/curriculum">CURRICULUM</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/contact">CONTÁCTAME</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m      </ul>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </div>[m
+[32m+[m[32m</nav>[m
+\ No newline at end of file[m
+
+[33mcommit 18230768ca1e075a58c298790cc6cbadbbc30c74[m
+Author: ConstLaf <developer.constance@gmail.com>
+Date:   Fri Sep 11 23:55:23 2020 -0300
+
+    Adds cv component pdf viewer
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mindex dc76293..d0478b8 100644[m
+[1m--- a/portfolio/src/app/component/header/header.component.html[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333333; font-size: 1.5rem; font-weight: bold">[m
+[32m+[m[32m<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #333333; font-size: 1.5rem; font-weight: bold">[m
+     <a class="navbar-brand" routerLink="/home">[m
+         <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">[m
+     </a>[m
+
+[33mcommit 29d26f579ef12bf469a157eb18a68a8f17bd1507[m
+Author: ConstLaf <developer.constance@gmail.com>
+Date:   Fri Sep 11 15:52:49 2020 -0300
+
+    Fix navbar toggle
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mindex 045e8d2..dc76293 100644[m
+[1m--- a/portfolio/src/app/component/header/header.component.html[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -1,28 +1,28 @@[m
+[31m-<nav class="navbar navbar-expand-lg navbar-dark navStyle">[m
+[32m+[m[32m<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333333; font-size: 1.5rem; font-weight: bold">[m
+     <a class="navbar-brand" routerLink="/home">[m
+         <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">[m
+     </a>[m
+[31m-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">[m
+[32m+[m[32m    <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">[m
+       <span class="navbar-toggler-icon"></span>[m
+     </button>[m
+   [m
+[31m-    <div class="collapse navbar-collapse" id="navbarSupportedContent">[m
+[31m-      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">[m
+[32m+[m[32m    <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarSupportedContent">[m
+[32m+[m[32m      <ul class="navbar-nav ml-auto">[m
+         <li class="nav-item">[m
+[31m-          <a class="nav-link active" routerLink="/projects">PROYECTOS</a>[m
+[32m+[m[32m          <a class="nav-link" routerLink="/projects">PROYECTOS</a>[m
+         </li>[m
+         <li class="nav-item">[m
+[31m-            <a class="nav-link active" routerLink="/about">ACERCA DE MÍ</a>[m
+[31m-          </li>[m
+[31m-          <li class="nav-item">[m
+[31m-            <a class="nav-link active" routerLink="/skills">HABILIDADES</a>[m
+[31m-          </li>[m
+[31m-          <li class="nav-item">[m
+[31m-            <a class="nav-link active" routerLink="/curriculum">CURRICULUM</a>[m
+[31m-          </li>[m
+[31m-          <li class="nav-item">[m
+[31m-            <a class="nav-link active" routerLink="/contact">CONTÁCTAME</a>[m
+[31m-          </li>[m
+[32m+[m[32m          <a class="nav-link" routerLink="/about">ACERCA DE MÍ</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/skills">HABILIDADES</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/curriculum">CURRICULUM</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" routerLink="/contact">CONTÁCTAME</a>[m
+[32m+[m[32m        </li>[m
+       </ul>[m
+     </div>[m
+   </nav>[m
+
+[33mcommit abe5dac30f0b71724159712d46ed7820d1294e1a[m
+Author: ConstLaf <developer.constance@gmail.com>
+Date:   Fri Sep 11 12:01:13 2020 -0300
+
+    Adds new components and binds them in navbar
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mindex fd3c54d..045e8d2 100644[m
+[1m--- a/portfolio/src/app/component/header/header.component.html[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -1,5 +1,5 @@[m
+ <nav class="navbar navbar-expand-lg navbar-dark navStyle">[m
+[31m-    <a class="navbar-brand" href="#">[m
+[32m+[m[32m    <a class="navbar-brand" routerLink="/home">[m
+         <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">[m
+     </a>[m
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">[m
+[36m@@ -9,19 +9,19 @@[m
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">[m
+       <ul class="navbar-nav mx-auto mt-2 mt-lg-0">[m
+         <li class="nav-item">[m
+[31m-          <a class="nav-link" href="#">PROYECTOS</a>[m
+[32m+[m[32m          <a class="nav-link active" routerLink="/projects">PROYECTOS</a>[m
+         </li>[m
+         <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">ACERCA DE MÍ</a>[m
+[32m+[m[32m            <a class="nav-link active" routerLink="/about">ACERCA DE MÍ</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">HABILIDADES</a>[m
+[32m+[m[32m            <a class="nav-link active" routerLink="/skills">HABILIDADES</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">CURRICULUM</a>[m
+[32m+[m[32m            <a class="nav-link active" routerLink="/curriculum">CURRICULUM</a>[m
+           </li>[m
+           <li class="nav-item">[m
+[31m-            <a class="nav-link" href="#">CONTÁCTAME</a>[m
+[32m+[m[32m            <a class="nav-link active" routerLink="/contact">CONTÁCTAME</a>[m
+           </li>[m
+       </ul>[m
+     </div>[m
+
+[33mcommit 9bcc246e5ec61eeaddc99e36dbc7988e3caf808d[m
+Author: ConstLaf <developer.constance@gmail.com>
+Date:   Thu Sep 10 23:34:30 2020 -0300
+
+    Adds responsive navbar
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mindex 4c9ccb4..fd3c54d 100644[m
+[1m--- a/portfolio/src/app/component/header/header.component.html[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -1,35 +1,28 @@[m
+[31m-<nav class="navbar navbar-expand-lg navbar-light bg-light">[m
+[31m-    <a class="navbar-brand" href="#">Navbar</a>[m
+[32m+[m[32m<nav class="navbar navbar-expand-lg navbar-dark navStyle">[m
+[32m+[m[32m    <a class="navbar-brand" href="#">[m
+[32m+[m[32m        <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">[m
+[32m+[m[32m    </a>[m
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">[m
+       <span class="navbar-toggler-icon"></span>[m
+     </button>[m
+   [m
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">[m
+[31m-      <ul class="navbar-nav mr-auto">[m
+[31m-        <li class="nav-item active">[m
+[31m-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>[m
+[31m-        </li>[m
+[32m+[m[32m      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">[m
+         <li class="nav-item">[m
+[31m-          <a class="nav-link" href="#">Link</a>[m
+[31m-        </li>[m
+[31m-        <li class="nav-item dropdown">[m
+[31m-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
+[31m-            Dropdown[m
+[31m-          </a>[m
+[31m-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">[m
+[31m-            <a class="dropdown-item" href="#">Action</a>[m
+[31m-            <a class="dropdown-item" href="#">Another action</a>[m
+[31m-            <div class="dropdown-divider"></div>[m
+[31m-            <a class="dropdown-item" href="#">Something else here</a>[m
+[31m-          </div>[m
+[32m+[m[32m          <a class="nav-link" href="#">PROYECTOS</a>[m
+         </li>[m
+         <li class="nav-item">[m
+[31m-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>[m
+[31m-        </li>[m
+[32m+[m[32m            <a class="nav-link" href="#">ACERCA DE MÍ</a>[m
+[32m+[m[32m          </li>[m
+[32m+[m[32m          <li class="nav-item">[m
+[32m+[m[32m            <a class="nav-link" href="#">HABILIDADES</a>[m
+[32m+[m[32m          </li>[m
+[32m+[m[32m          <li class="nav-item">[m
+[32m+[m[32m            <a class="nav-link" href="#">CURRICULUM</a>[m
+[32m+[m[32m          </li>[m
+[32m+[m[32m          <li class="nav-item">[m
+[32m+[m[32m            <a class="nav-link" href="#">CONTÁCTAME</a>[m
+[32m+[m[32m          </li>[m
+       </ul>[m
+[31m-      <form class="form-inline my-2 my-lg-0">[m
+[31m-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">[m
+[31m-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>[m
+[31m-      </form>[m
+     </div>[m
+   </nav>[m
+
+[33mcommit 4e5e8a5ba129a6323ae03426ff4285365d88d95d[m
+Author: ConstLaf <developer.constance@gmail.com>
+Date:   Thu Sep 10 21:46:00 2020 -0300
+
+    Adds bootstrap via npm and cdn
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mindex 4f5a95d..4c9ccb4 100644[m
+[1m--- a/portfolio/src/app/component/header/header.component.html[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -1 +1,35 @@[m
+[31m-<p>header works!</p>[m
+[32m+[m[32m<nav class="navbar navbar-expand-lg navbar-light bg-light">[m
+[32m+[m[32m    <a class="navbar-brand" href="#">Navbar</a>[m
+[32m+[m[32m    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">[m
+[32m+[m[32m      <span class="navbar-toggler-icon"></span>[m
+[32m+[m[32m    </button>[m
+[32m+[m[41m  [m
+[32m+[m[32m    <div class="collapse navbar-collapse" id="navbarSupportedContent">[m
+[32m+[m[32m      <ul class="navbar-nav mr-auto">[m
+[32m+[m[32m        <li class="nav-item active">[m
+[32m+[m[32m          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link" href="#">Link</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item dropdown">[m
+[32m+[m[32m          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[m
+[32m+[m[32m            Dropdown[m
+[32m+[m[32m          </a>[m
+[32m+[m[32m          <div class="dropdown-menu" aria-labelledby="navbarDropdown">[m
+[32m+[m[32m            <a class="dropdown-item" href="#">Action</a>[m
+[32m+[m[32m            <a class="dropdown-item" href="#">Another action</a>[m
+[32m+[m[32m            <div class="dropdown-divider"></div>[m
+[32m+[m[32m            <a class="dropdown-item" href="#">Something else here</a>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li class="nav-item">[m
+[32m+[m[32m          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m      </ul>[m
+[32m+[m[32m      <form class="form-inline my-2 my-lg-0">[m
+[32m+[m[32m        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">[m
+[32m+[m[32m        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>[m
+[32m+[m[32m      </form>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </nav>[m
+
+[33mcommit cf77c9a2a6415b643878890550e091b42979a65f[m
+Author: ConstLaf <developer.constance@gmail.com>
+Date:   Tue Sep 8 12:18:58 2020 -0300
+
+    Adds new Angular project
+
+[1mdiff --git a/portfolio/src/app/component/header/header.component.html b/portfolio/src/app/component/header/header.component.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4f5a95d[m
+[1m--- /dev/null[m
+[1m+++ b/portfolio/src/app/component/header/header.component.html[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<p>header works!</p>[m

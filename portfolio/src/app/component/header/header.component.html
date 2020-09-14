@@ -35,11 +35,11 @@
       <img class="homeBtn" src="../../../assets/images/logos/home.svg" alt="home" srcset="">
     </a>
 
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-        
-    <div class="collapse navbar-collapse" id="navbar">
+            
+    <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarSupportedContent">
       <ul class="nav navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" routerLink="/projects">PROYECTOS</a>
