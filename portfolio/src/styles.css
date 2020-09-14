@@ -1,17 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+/** {
     font-family: 'Lato', sans-serif;
     margin: 0px;
     padding: 0px;
-}
+}*/
 
+/*
+html {
+    height: 100%;
+}
+*/
 /*Global style of background image, with these properties, responsiveq*/
+/*
 body {
+    padding-top: 87px;
     background-image: url('./assets/images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
     height: 100vh;
-    /* margin-bottom: 3.125rem; */
+    margin-bottom: 3.125rem;
+}
+*/
+
+/*.container .row:nth-of-type(1) div {
+    background-color: #4e9013;
+    padding: 10px 0;
+    border: 1px solid green;
+    color: white;
+    text-align: center;
+}
+*/
+/*
+body {
+    min-height: 100%;
+    background-color: #2b542c;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: 100% 100%;
+}
+*/
+
+/*
+body {
+    position: relative;
+}
+
+body { 
+    z-index: 0; 
+}
+
+#cover {
+    z-index: -1;
+}*/
+
+/*
+#cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
+
+/*
+#navigation-bar-container a.navbar-brand, #navbar ul a {
+    font-weight: 900;
+}
+
+#navigation-bar-container a.navbar-brand {
+    font-size: 3.2rem;
+}
+
+#navbar ul a {
+    font-size: 1.8rem;
+}
+*/
+
+
+/*
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#center-content {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom;
+}*/
+
+html {
+    height: 100%;
+}
+body {
+    
+    background-image: url('./assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#footer-content {
+    text-align: center;
+}
+
+#main-container, #main-container .row {
+    padding-top: 50px;
+    height: 100%;
 }

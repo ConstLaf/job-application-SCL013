@@ -1,7 +1,7 @@
 .aboutStyle {
     background-color: #333333b2;
-    height: 85%;
-    width: 80%;
+    /*height: 85%;*/
+    /*width: 80%;*/
 }
 
 .aboutText {
@@ -13,15 +13,10 @@
 
 .aboutImgStyle {
     background-color: #C4C4C4;
-    width: 50%;
-    height: 50%;
+    /*width: 50%;*/
+    /*height: 50%;*/
 }
 
 img {
     height: 50vh;
-}
-
-.aboutTextContainer {
-    width: 50%;
-    height: 50%;
 }
