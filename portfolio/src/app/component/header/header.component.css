@@ -1,9 +1,5 @@
-/*.navbar, .navbar-nav, .nav, li, a {
+.navbar, .navbar-nav, .nav, li, a {
     color: #E5E5E5 !important;
+    font-size: 1.5rem; 
+    font-weight: bold
 } 
-
-.homeBtn {
-    height: 3.75rem;
-    width: 3.75rem
-}
-*/
